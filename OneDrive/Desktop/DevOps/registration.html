@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration Form_0514</title>
+        <style>
+body{
+    justify-content:center;
+    align-items: center;
+    margin-top: 10%;
+    background-color:lch(95.05% 1.24 255.96 / 0.969);
+    display: flex;
+}
+label{
+    margin-top: 2%;
+    align-items: center;
+}
+form{
+    border-radius: 2px;
+    background-color:hwb(167 94% 2%);
+    padding: 80px;
+    box-shadow: 0 0 10px black;
+
+}
+input{
+    margin-bottom: 10px;
+    align-items: center;
+    margin-left: 13px
+}
+
+        </style>
+     </head>
+    <body>
+        <form id="registrationForm">
+        <h1>REGISTRATION FORM_0514</h1>
+        <label>First Name:</label>
+        <input type="text"><br>
+        <label>Last Name:</label>
+        <input type="text"><br>
+         <label>Father Name:</label>
+        <input type="text"><br>
+        <label>Mother Name:</label>
+        <input type="text"><br>
+         <label>Occupation</label>
+        <input type="text"><br>
+        <label>Email:</label>
+        <input type="email"><br>
+        <label>Phone No:</label>
+        <input type="text"><br>
+       
+        <label>Dob:</label>
+        <input type="date"><br>
+        <label>Address:</label>
+        <input type="text"><br>
+        <label>Gender:</label>
+        <input type="radio" required>Male
+        <input type="radio" required>Female<br>
+        <label>Branch:</label>
+        <select id="Branch">
+            <option value="CSE">Select</option>
+            <option value="CSE">CSE</option>
+            <option value="CSE">ECE</option>
+            <option value="CSE">EEE</option>
+            <option value="CSE">CIVIL</option>
+        </select><br>
+         <input type="checkbox">
+        <label>Accept Terms & Conditions</label><br>
+        <button type="submit">Submit</button>
+         <input type="reset" value="Reset" id="resetBtn">
+        </form>
+<script>
+            document.getElementById('registrationForm').addEventListener('submit',function(e) {
+                alert("Thankyou for registartion!");
+                this.reset();
+            });
+             document.getElementById("resetBtn").addEventListener("click", function() {
+            alert("Form has been reset!");
+        });
+        </script>
+        
+    </body>
+</html>
